@@ -1,0 +1,24 @@
+{
+    // Input file name
+    "input_file_name" : "bo_inputs.xlsx",
+    
+    // Number of experiment rounds. Default is 1, which will append _round<num> to the file name.
+    "exp_round" : 1, // Set to 0 to avoid appending epoch to the file name.
+    
+    // Number of input parameters (i.e., number of columns for input parameters)
+    "input_columns" :4,
+    
+    // Number of output targets (i.e., number of columns for output parameters)
+    "output_columns" : 3,
+    
+    // Weights to combine output targets into a single objective (number of weights must match the number of output targets)
+    // Default is [1, 1, 1]
+    "output_weights" : [1, 1, 1],
+    
+    // Acquisition function ranking weights
+    // [4, 3, 2, 1]
+    "acquisition_function_weights" : [4, 3, 2, 1],
+    
+    // Whether to use the Gpy library
+    "use_gpy": true // true or false
+}

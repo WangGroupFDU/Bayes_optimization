@@ -1,0 +1,8 @@
+numpy
+pandas
+scipy
+matplotlib
+GPy
+scikit-learn
+json5
+# Python 3.9.18
