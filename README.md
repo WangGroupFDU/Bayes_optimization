@@ -1,6 +1,6 @@
 ## Introduction
 
-This project focuses on selecting optimal battery construction parameters using Bayesian optimization. The prior distribution is modeled as a Gaussian process regression, which is iteratively updated based on observed values. 本文中涉及的变量均为离散值。
+This project focuses on selecting optimal battery construction parameters using Bayesian optimization. The prior distribution is modeled as a Gaussian process regression, which is iteratively updated based on observed values. The variables involved in this article are all discrete values.
 
 ![Bayesian Optimization Process](img/bayesian_optimization_process.drawio.svg)
 
@@ -24,6 +24,7 @@ These parameters were used for the preparation of lithium metal batteries and su
 The optimization results of the two rounds in this article can be obtained as follows:
 First round of experiments: Run `python -m main` directly using the default config.
 Second round of experiments: Modify the `config.json` file by setting `epoch` to `2`, and run `python -m main` again.
+
 ## Installation & Usage
 
 1. Clone the repository via `git clone https://github.com/WangGroupFDU/Bayes_optimization.git`
