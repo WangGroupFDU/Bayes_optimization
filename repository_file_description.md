@@ -8,10 +8,7 @@
    - af_results.png: Plot of the acquisition function results for all formulas in the parameter domain.
    - object_selected: The selected formula.
 
-4. Review_Comments_Response: Responses to the reviewers' comments from the first submission.
-   - Reviewer's response code
-      - data_process.py: Downloads the runtime diagram of the Python code provided by the reviewer.
-5. utils:
+4. utils:
    - bayes_opt_gpy.py: The Bayesian optimization implementation part based on the Gpy library.
    - bayes_opt_pure_math.py: Pure mathematical Bayesian optimization implementation based on the scipy library.
    - load_input_data.py: Checks the input data and preprocesses to obtain params and targets.
