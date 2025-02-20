@@ -68,9 +68,10 @@ def post_process(results,best_value,params,bayes_opt,config,output_prefix):
     print("Object function values:\n", object_function_results)
     print("Grouped results:\n", object_function_df)
     
-    object_function_results.to_csv(f"output/data/object_selected_{output_prefix}.csv",index = False)
+    # object_function_results.to_csv(f"output/data/object_selected_{output_prefix}.csv",index = False)
+    object_function_df.to_csv(f"output/data/object_grouped_{output_prefix}.csv",index = False)
     
-    fig, axs = plt.subplots(3, config["input_columns"], figsize=(20, 25))
+    fig, axs = plt.subplots(3, config["input_columns"], figsize=(20, 25),squeeze=False)
     metrics = ['ei', 'pi', 'ucb']
     parameters = param_cols
 
